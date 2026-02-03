@@ -1,0 +1,295 @@
+/* Тёмная минималистичная тема для index, about, works */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: #0d0d17;
+  color: #e0e0ff;
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ── Header ──────────────────────────────────────────────── */
+header {
+  padding: 28px 0;
+  background: #0a0a12;
+  border-bottom: 1px solid #1e1e2e;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.4px;
+}
+
+.logo span {
+  color: #34526e;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-menu a {
+  color: #b0b0d0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a.active {
+  color: #163550;
+}
+
+/* ── Главная (index.html) ───────────────────────────────── */
+.hero {
+  padding: 160px 0 120px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero .accent {
+  color: #34526e;
+}
+
+.hero .lead {
+  font-size: 1.38rem;
+  color: #a0a0c0;
+  max-width: 620px;
+  margin: 0 auto 40px;
+}
+
+.music-box {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.music-box h2 {
+  margin-bottom: 30px;
+  color: #34526e;
+  font-size: 1.6rem;
+}
+
+.player-box {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #050516;
+  padding: 30px;
+  border-radius: 16px;
+}
+
+.track-info {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+}
+
+audio {
+  width: 50%;
+  outline: none;
+}
+
+audio::-webkit-media-controls-panel {
+  background: #3a3939;
+  border-radius: 8px;
+}
+
+/* ── About (about.html) ─────────────────────────────────── */
+.bio {
+  padding: 140px 0 120px;
+}
+
+.bio-box {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.avatar-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 12px 40px rgba(0, 102, 255, 0.15);
+  border: 6px solid #1e1e2e;
+  flex-shrink: 0;
+}
+
+.bio-text {
+  max-width: 620px;
+  flex: 1;
+}
+
+.bio-text h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #264fa7;
+}
+
+.bio-text p {
+  font-size: 1.18rem;
+  color: #b0b0d0;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  margin-top: 40px;
+}
+
+.social-icons a {
+  color: #8888aa;
+  font-size: 1.8rem;
+  margin-right: 28px;
+  transition: color 0.22s;
+}
+
+.social-icons a:hover {
+  color: #224361;
+}
+
+/* ── Works (works.html) ─────────────────────────────────── */
+.works {
+  padding: 140px 0 120px;
+}
+
+.works h1 {
+  text-align: center;
+  font-size: 2.9rem;
+  font-weight: 700;
+  margin-bottom: 70px;
+  color: #f0f0ff;
+}
+
+.github-section {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.github-section p {
+  font-size: 1.25rem;
+  color: #b0b0d0;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #e0e0ff;
+  text-decoration: none;
+  padding: 16px 40px;
+  border: 2px solid #3973a5;
+  border-radius: 10px;
+  transition: all 0.25s ease;
+}
+
+.github-link:hover {
+  background: #37638a;
+  color: #0d0d17;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(77, 171, 255, 0.25);
+}
+
+.github-link i {
+  font-size: 2.4rem;
+}
+
+.small-text {
+  margin-top: 40px;
+  font-size: 1rem;
+  color: #8888aa;
+}
+
+/* ── Footer ──────────────────────────────────────────────── */
+footer {
+  padding: 80px 0 60px;
+  text-align: center;
+  color: #8888aa;
+  border-top: 1px solid #1e1e2e;
+  background: #0a0a12;
+}
+
+footer p {
+  font-size: 0.98rem;
+}
+
+/* ── Адаптивность ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+
+  .hero {
+    padding: 120px 0 80px;
+  }
+
+  .hero h1 {
+    font-size: 2.8rem;
+  }
+
+  .bio,
+  .works {
+    padding: 100px 0 80px;
+  }
+
+  .bio-box {
+    flex-direction: column;
+    text-align: center;
+    gap: 48px;
+  }
+
+  .avatar-img {
+    margin-bottom: 20px;
+  }
+
+  .bio-text h1,
+  .works h1 {
+    font-size: 2.4rem;
+  }
+
+  .github-link {
+    font-size: 1.7rem;
+    padding: 14px 32px;
+  }
+}
